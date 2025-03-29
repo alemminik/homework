@@ -1,0 +1,27 @@
+.block--gray {
+    background: rgb(74, 71, 71);
+}
+
+.text--white {
+    color: white;
+}
+
+.text--pink {
+    color: rgb(185, 58, 185);
+}
+
+.square--red {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+.block--purple {
+    width: 300px;
+    background: #b980d1;
+}
+
+.inline-element {
+    color: white;
+    background: #833ba2;
+}
