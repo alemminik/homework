@@ -1,0 +1,29 @@
+header {
+    height: 60px;
+    background: rgb(196, 128, 3);
+}
+
+.header__nav-list {
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.header__nav-link {
+    color: black;
+}
+
+.quote {
+    background: rgb(228, 191, 122);
+}
+
+footer {
+    background: rgb(177, 102, 227);
+    height: 300px;
+    color: white;
+}
+
+.footer__link {
+    color: white;
+}
