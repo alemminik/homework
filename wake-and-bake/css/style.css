@@ -4,6 +4,7 @@
     --general-bg: #FFF9F4;
     --accent-bg: #FFE0CB;
     --accent-color: #FFA55C;
+    --transition: all .4s;
 }
 
 
@@ -31,7 +32,8 @@
 }
 
 .container {
-    max-width: 1310px; /* width + 30px */
+    max-width: 1310px;
+    /* width + 30px */
     margin: 0 auto;
     padding: 0 15px;
     height: 100%;
@@ -46,7 +48,8 @@
     font-weight: 500;
     border-radius: 60px;
     background: var(--accent-color);
-    padding: 3px 15px; /* чтобы текст не прилипал */
+    padding: 3px 15px;
+    /* чтобы текст не прилипал */
     height: 62px;
     transition: background 0.4s;
 }
@@ -87,12 +90,6 @@
     gap: 4vh 40px;
 }
 
-.nav__link {
-    display: block;
-    padding: 5px 0;
-    position: relative;
-    z-index: 1;
-}
 
 .burger-icon {
     display: none;
@@ -111,7 +108,7 @@
     height: 3px;
     border-radius: 100px;
     background: var(--general-text);
-    transition: all .4s;
+    transition: var(--transition);
 }
 
 .burger-icon span {
@@ -140,9 +137,17 @@
     top: 0;
     transform: rotate(-45deg);
 }
+
 .body--opened-menu .burger-icon span::after {
     bottom: 0;
     transform: rotate(45deg);
+}
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
 }
 
 .nav__link::before {
@@ -256,7 +261,7 @@
     align-items: center;
     justify-content: center;
     width: 78px;
-    height: 78px; 
+    height: 78px;
     background: #FFE0CB;
     border-radius: 50%;
     box-shadow: 0px 4px 20px rgba(184, 148, 126, 0.30);
@@ -285,6 +290,122 @@
 
 /* -------------------------------------------------------------------------- */
 
+.footer {
+    color: var(--general-bg);
+    background: #AB8261;
+    padding: 60px 0 66px;
+}
+
+.footer__inner {
+    display: grid;
+    grid-template-columns: .9fr .9fr 1.1fr auto;
+    gap: 40px 30px;
+}
+
+
+.footer__col:first-child {
+    margin-top: -30px;
+}
+
+
+.footer__logo {
+    display: block;
+    max-width: 240px;
+}
+
+.footer__logo img {
+    width: 100%;
+}
+
+.footer__logo-text {
+    margin-bottom: 20px;
+}
+
+.socials__list {
+    display: flex;
+    gap: 15px;
+    max-height: 36px;
+    line-height: 0;
+}
+
+.socials__link path {
+    transition: var(--transition);
+}
+
+.socials__link:hover path {
+    fill: var(--accent-color);
+}
+
+.footer__col-list {
+    margin-top: -5px;
+}
+
+.footer__col-item {
+    margin-bottom: 10px;
+}
+
+.footer__col-item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__col-link {
+    display: block;
+    padding: 5px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.footer__col-link::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -13px;
+    width: 34px;
+    height: 34px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    opacity: 0;
+    visibility: none;
+    transition: all 0.4s;
+}
+
+.footer__col-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer__contact-item {
+    margin-bottom: 10px;
+}
+
+.footer__contact-item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer__col-tel {
+    margin-bottom: 47px;
+}
+
+.footer__col-number {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.footer__col-number:hover {
+    color: var(--accent-color);
+}
+
+.footer__col-copy {
+    color: #DEC5B1;
+}
+
+/* -------------------------------------------------------------------------- */
+
 @media (max-width: 1200px) {
     .hero__img {
         margin: 0;
@@ -294,6 +415,19 @@
         position: static;
         max-width: 377px;
         margin-top: 30px;
+    }
+
+    /* ------------------------------------------------------- */
+
+    .footer__inner {
+        justify-content: space-between;
+        grid-template-rows: auto auto;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .footer__col:last-child {
+        grid-column: 1 / -1;
+        text-align: center;
     }
 }
 
@@ -308,7 +442,7 @@
         background: var(--general-bg);
         padding: 26vh 15px 30px;
         font-size: 24px;
-        transition: all .4s;
+        transition: var(--transition);
     }
 
     .nav__list {
@@ -324,6 +458,30 @@
 
     .burger-icon {
         display: flex;
+    }
+
+    /* ----------------------------------------------------------- */
+
+    .footer__inner {
+        justify-content: center;
+        grid-template: none;
+        text-align: center;
+        gap: 0;
+    }
+
+    .footer__col:first-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .footer__col:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .footer__col:nth-child(3) {
+        margin-bottom: 10px;
     }
 }
 
