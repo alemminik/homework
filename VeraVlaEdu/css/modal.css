@@ -1,0 +1,143 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    padding: 15px;
+    background: rgba(8, 38, 43, 0.50);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+}
+
+.body--opened-modal {
+    overflow-y: hidden;
+}
+
+.body--opened-modal .modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal .button {
+    width: 100%;
+}
+
+.modal__window {
+    position: relative;
+    border-radius: 20px;
+    background: linear-gradient(286deg, #033958 3.63%, #0F6B78 90.98%);
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.53);
+    padding: 40px 84px 36px 80px;
+    max-width: 590px;
+    max-height: 95%;
+    margin: 25px;
+}
+
+.modal__cancel {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: -18px;
+    right: -18px;
+}
+
+.cross-mobile {
+    display: none;
+}
+
+.modal__cancel img {
+    width: 100%;
+}
+
+.modal__title {
+    font-size: 33px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.modal__title span {
+    color: #4ABCEC;
+}
+
+.modal__form-label {
+    color: #00E0FF;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    margin-bottom: 19px;
+}
+
+.field {
+    display: block;
+    position: relative;
+}
+
+.field span {
+    position: absolute;
+    top: 35px;
+    left: 28px;
+    font-size: 11px;
+    visibility: hidden;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.field__desc {
+    margin-bottom: 12px;
+}
+
+.field__input {
+    border-radius: 9px;
+    border: 2px solid #49B9E8;
+    background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
+    display: block;
+    width: 100%;
+    padding: 21px 57px 16px 21px;
+    transition: var(--transition);
+    color: #FFF;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+.field__input::placeholder {
+    transition: var(--transition);
+    color: var(--input-color);
+    font-size: 16px;
+}
+
+.field__input:focus {
+    padding: 26px 42px 12px 28px;
+}
+
+.field__input-date:focus, .field__input-phone:focus {
+    padding: 21px 57px 16px 21px;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.field__input-date {
+    position: relative;
+}
+
+.field__input-date::after {
+    content: url('../img/logos/icons/arrow-down.svg');
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.field__input:focus+span {
+    visibility: visible;
+    opacity: 1;
+}
