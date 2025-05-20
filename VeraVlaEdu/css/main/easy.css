@@ -1,5 +1,5 @@
 .easy {
-    background: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+    background: var(--general-bg);
 }
 
 .easy__wrapper {
@@ -37,12 +37,12 @@
     max-width: 871px;
     font-size: 54px;
     text-transform: uppercase;
-    color: #4ABCEC;
+    color: var(--accent-text);
 
 }
 
 .easy__title span {
-    color: #fff;
+    color: var(--general-text);
 }
 
 .easy__body {

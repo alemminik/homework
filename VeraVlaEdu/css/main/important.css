@@ -1,5 +1,5 @@
 .main__important {
-    background: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+    background: var(--general-bg);
     padding: 104px 0 132px;
 }
 
@@ -10,13 +10,13 @@
 }
 
 .important__title {
-    color: #4ABCEC;
+    color: var(--accent-text);
     font-size: 54px;
     text-transform: uppercase;
 }
 
 .important__title span {
-    color: #FFF;
+    color: var(--general-text);
 }
 
 .important__grid {

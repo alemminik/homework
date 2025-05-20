@@ -1,5 +1,5 @@
 footer {
-    background: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+    background: var(--general-bg);
 }
 
 .footer__inner {
@@ -43,7 +43,14 @@ footer {
     flex-shrink: 0;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.05);
-} 
+    transition: var(--transition);
+}
+
+@media (hover: hover) {
+    .footer__consultation-btn-wrap:hover {
+        transform: translateY(-3px);
+    }
+}
 
 .footer__consultation-btn {
     transform: rotate(-90deg);
@@ -82,8 +89,14 @@ footer {
     align-items: center;
     justify-self: end;
     gap: 7px;
+    transition: var(--transition);
 }
 
+@media (hover: hover) {
+    .footer__mail:hover {
+        transform: translateY(-3px);
+    }
+}
 .footer__mail-icon {
     width: 25px;
     height: 25px;
@@ -94,7 +107,7 @@ footer {
 }
 
 .footer__mail-text {
-    color: #4ABCEC;
+    color: var(--accent-text);
     font-size: 18px;
     text-decoration-line: underline;
     text-decoration-style: solid;
@@ -109,6 +122,7 @@ footer {
     align-items: center;
     justify-self: end;
     gap: 7px;
+    transition: var(--transition);
 }
 
 .footer__phone img {
@@ -122,6 +136,17 @@ footer {
 
 .footer__phone-text {
     font-size: 18px;
+    transition: var(--transition);
+}
+
+@media (hover: hover) {
+    .footer__phone:hover {
+        transform: translateY(-3px);
+    }
+
+    .footer__phone-text:hover {
+        color: var(--accent-text);
+    }
 }
 
 .footer__socials {

@@ -9,7 +9,7 @@
     justify-content: center;
     opacity: 0;
     visibility: hidden;
-    transition: all .6s;
+    transition: all var(--transition);
 }
 
 .body--opened-modal {
@@ -59,7 +59,7 @@
 }
 
 .modal__title span {
-    color: #4ABCEC;
+    color: var(--accent-text);
 }
 
 .modal__form-label {
@@ -96,9 +96,10 @@
     width: 100%;
     padding: 21px 57px 16px 21px;
     transition: var(--transition);
-    color: #FFF;
+    color: var(--general-text);
     font-size: 15px;
     letter-spacing: 1.5px;
+    min-height: 62px;
 }
 
 .field__input::placeholder {

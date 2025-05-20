@@ -1,5 +1,5 @@
 .program {
-    background: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+    background: var(--general-bg);
 }
 
 .main__program {
@@ -19,7 +19,7 @@
 }
 
 .program__title span {
-    color: #4ABCEC;
+    color: var(--accent-text);
 }
 
 .program__desc {
@@ -47,7 +47,7 @@
     background: linear-gradient(286deg, #073447 3.63%, #08262B 90.98%);
     max-height: 56px;
     width: 100%;
-    transition: .6s;
+    transition: var(--transition);
 }
 
 .accordion-list__control-title {
@@ -92,7 +92,7 @@
     border: 2px solid #49b9e81a;
     transform: rotate(180deg);
     background: linear-gradient(180deg, #00e0ff4d 0%, #00e0ff26 100%);
-    transition: all .6s;
+    transition: all var(--transition);
     /* brightness: */
 }
 
@@ -111,7 +111,7 @@
 .accordion-list__content {
     max-height: 0;
     overflow: hidden;
-    transition: .6s
+    transition: var(--transition)
 }
 
 .accordion-content {
@@ -155,7 +155,7 @@
 }
 
 .accordion-content__title {
-    color: #4ABCEC;
+    color: var(--accent-text);
     font-weight: 750;
     line-height: 21px; /* 131.25% */
 }

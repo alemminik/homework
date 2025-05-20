@@ -37,6 +37,14 @@
     align-items: center;
     gap: 12px;
     font-size: 18px;
+    color: var(--general-text);
+    transition: color var(--transition);
+}
+
+@media (hover: hover) {
+    .header__contact:hover {
+        color: var(--accent-text);
+    }
 }
 
 .header__contact img {
@@ -85,7 +93,14 @@
     flex-shrink: 0;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.05);
-} 
+    transition: var(--transition);
+}
+
+@media (hover: hover) {
+    .hero__consultation-btn-wrap:hover {
+        transform: translateY(-3px);
+    }
+}
 
 .hero__consultation-btn {
     display: flex;
@@ -115,7 +130,14 @@
     flex-shrink: 0;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.05);
-} 
+    transition: var(--transition);
+}
+
+@media (hover: hover) {
+    .hero__whatsapp-btn-wrap:hover {
+        transform: translateY(-3px);
+    }
+}
 
 .hero__whatsapp-btn {
     display: flex;

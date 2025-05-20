@@ -13,14 +13,14 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
-                        <a class="header__logo">
+                        <a class="header__logo" href="/">
                             <img src="./img/logos/logo.png" alt="">
                         </a>
-                        <a class="header__contact">
+                        <a class="header__contact" href="tel:+821075269192">
                             <img src="./img/logos/icons/phone.svg" alt="">
                             + 82 (10) 7526-9192
                         </a>
@@ -78,9 +78,11 @@
                                 Записаться на ознакомительный вебинар
                             </button>
                             <div class="hero__scroll">
-                                <button class="hero__scroll-btn">
-                                    <div class="hero__scroll-circle"></div>
-                                </button>
+                                <a class="hero__scroll-link" href="#job">
+                                    <button class="hero__scroll-btn">
+                                        <div class="hero__scroll-circle"></div>
+                                    </button>
+                                </a>
                                 <p class="hero__scroll-text">
                                     Листайте вниз
                                 </p>
@@ -720,270 +722,498 @@
                                 Все объявления
                             </button>
                         </div>
-                        <div class="swiper ad__slider">
-                            <div class="swiper-wrapper ad__slider-wrapper">
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
+                        <div class="ad__slider-wrapper">
+                            <div class="swiper ad__slider">
+                                <div class="swiper-wrapper ad__slider-wrapper">
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/1.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
                                                 </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
-                                                </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
-                                            </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/2.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
                                                 </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
-                                                </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
-                                            </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/3.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
                                                 </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
-                                                </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
-                                            </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/4.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
                                                 </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
-                                                </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
-                                            </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide ad__slide">
-                                    <div class="ad__slide-img-wrapper">
-                                        <div class="ad__slide-img">
-                                            <img src="./img/content/advertisements/1.jpg"
-                                                alt="Человек печатает на клавиатуре">
-                                            <div class="ad__slide-date">
-                                                <div class="ad__slide-date-img">
-                                                    <img src="./img/logos/icons/calendar.svg" alt="">
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/1.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
                                                 </div>
-                                                <p class="ad__slide-date-text">
-                                                    24 мая 2021
-                                                </p>
                                             </div>
                                         </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="ad__slide-heading">
-                                        <h5 class="ad__slide-title">
-                                            Заголовок объявления из нескольких слов
-                                        </h5>
-                                        <p class="ad__slide-desc">
-                                            Искусственный интеллект - это не одна дисциплина, как думают многие, а
-                                            совокупность различных между
-                                        </p>
-                                        <a class="ad__slide-link" href="#">
-                                            Подробнее
-                                        </a>
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/2.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/3.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/4.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide ad__slide">
+                                        <div class="ad__slide-img-wrapper">
+                                            <div class="ad__slide-img">
+                                                <img src="./img/content/advertisements/1.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                                <div class="ad__slide-date">
+                                                    <div class="ad__slide-date-img">
+                                                        <img src="./img/logos/icons/calendar.svg" alt="">
+                                                    </div>
+                                                    <p class="ad__slide-date-text">
+                                                        24 мая 2021
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ad__slide-heading">
+                                            <h5 class="ad__slide-title">
+                                                Заголовок объявления из нескольких слов
+                                            </h5>
+                                            <p class="ad__slide-desc">
+                                                Искусственный интеллект - это не одна дисциплина, как думают многие, а
+                                                совокупность различных между
+                                            </p>
+                                            <a class="ad__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                <nav class="ad__slider-nav">
+                                    <div class="ad__slider-prev">
+                                        <img src="./img/logos/icons/arrow.svg" alt="">
+                                    </div>
+                                    <div class="ad__slider-next">
+                                        <img src="./img/logos/icons/arrow.svg" alt="">
+                                    </div>
+                                </nav>
                             </div>
-                            <!-- <div class="ad__slider-prev">
-                                    <img src="./img/logos/icons/arrow.svg" alt="">
-                            </div>
-                            <div class="ad__slider-next">
-                                <img src="./img/logos/icons/arrow.svg" alt="">
-                            </div> -->
                         </div>
                         <button class="ad__mob-button">
                             Все объявления
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="job main__job" id="job">
+                <div class="container">
+                    <div class="job__inner">
+                        <div class="job__top">
+                            <h3 class="job__title">
+                                Вакансии
+                            </h3>
+                            <button class="job__button">
+                                Все вакансии
+                            </button>
+                        </div>
+                        <div class="job__slider-wrapper">
+                            <div class="swiper job__slider">
+                                <div class="swiper-wrapper job__slider-wrapper">
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/4.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется администратор
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/3.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется менеджер
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/2.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется администратор
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/1.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется менеджер
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/4.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется администратор
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/3.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется менеджер
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/2.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется администратор
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide job__slide">
+                                        <div class="job__slide-img-wrapper">
+                                            <div class="job__slide-img">
+                                                <img src="./img/content/advertisements/1.jpg"
+                                                    alt="Человек печатает на клавиатуре">
+                                            </div>
+                                        </div>
+                                        <div class="job__slide-heading">
+                                            <h5 class="job__slide-title">
+                                                Требуется менеджер
+                                            </h5>
+                                            <p class="job__slide-desc">
+                                                Опыт работы . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                от 1 года
+                                                Образование . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                Высшее
+                                                Возраст . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+                                                . . . 21-35 лет
+                                            </p>
+                                            <a class="job__slide-link" href="#">
+                                                Подробнее
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <nav class="job__slider-nav">
+                                    <div class="job__slider-prev">
+                                        <img src="./img/logos/icons/arrow.svg" alt="">
+                                    </div>
+                                    <div class="job__slider-next">
+                                        <img src="./img/logos/icons/arrow.svg" alt="">
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <button class="job__mob-button">
+                            Все вакансии
                         </button>
                     </div>
                 </div>
@@ -998,17 +1228,17 @@
                         <p class="hero__consultation-text">
                             Подняться вверх
                         </p>
-                        <button class="footer__consultation-btn-wrap">
+                        <a class="footer__consultation-btn-wrap" href="#header">
                             <div class="footer__consultation-btn">
                                 <img src="./img/logos/icons/arrow.svg" alt="">
                             </div>
-                        </button>
+                        </a>
                     </div>
-                    <div class="footer__logo">
+                    <a class="footer__logo" href="/">
                         <img src="./img/logos/logo.png" alt="">
-                    </div>
+                    </a>
                     <div class="footer__contact">
-                        <a class="footer__mail" href="#">
+                        <a class="footer__mail" href="mailto:veravlaedu@gmail.com">
                             <div class="footer__mail-icon">
                                 <img src="./img/logos/icons/mail.svg" alt="">
                             </div>

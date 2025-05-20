@@ -1,6 +1,12 @@
 :root {
     --general-text: #fff;
+    --accent-text: #4ABCEC;
     --transition: .6s;
+    --general-bg: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -44,7 +50,17 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase;
     padding: 10px;
+    transition: var(--transition);
 }
+
+@media (hover: hover) {
+    .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 25px -5px #00E0FF, 0 0 10px #00E0FF;
+    background: linear-gradient(180deg, #13CDC2 0%, rgba(3, 225, 255, 0.9) 100%);
+    }
+}
+
 
 .water-line {
     width: 100%;

@@ -1,5 +1,5 @@
 .author {
-    background: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+    background: var(--general-bg);
 }
 
 .main__author {

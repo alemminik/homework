@@ -1,5 +1,5 @@
 .cool {
-    background: linear-gradient(286deg, #022335 3.63%, #043A41 90.98%);
+    background: var(--general-bg);
 }
 
 .cool__wrapper {
@@ -40,7 +40,7 @@
 }
 
 .cool__title span {
-    color: #4ABCEC;
+    color: var(--accent-text);
 }
 
 .cool__body {

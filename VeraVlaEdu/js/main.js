@@ -87,13 +87,102 @@
         });
     });
 
-    // Слайдер
-    const swiper = new Swiper('.swiper', {
-        slidesPerView: 4,
-        navigation: {
-            nextEl: '.ad__slider-next',
-            prevEl: '.ad__slider-prev',
+    // Слайдер для объявлений
+    const swiper = new Swiper('.ad__slider', {
+    spaceBetween: 15,
+    slidesPerView: 1,
+    slidesPerGroup: 1, // добавил, чтобы листалось по одному
+
+    navigation: {
+        nextEl: '.ad__slider-next',
+        prevEl: '.ad__slider-prev',
+    },
+
+    breakpoints: {
+        501: {
+            slidesPerView: 1.45,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
         },
-    });
+        601: {
+            slidesPerView: 1.65,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        701: {
+            slidesPerView: 1.7,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        801: {
+            slidesPerView: 2.2,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+
+        901: {
+            slidesPerView: 2.75,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        1231: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+        },
+    },
+
+    loop: false,
+});
+
+    //Слайдер для работы
+
+    const swiper_2 = new Swiper('.job__slider', {
+    spaceBetween: 15,
+    slidesPerView: 1,
+    slidesPerGroup: 1, // добавил, чтобы листалось по одному
+
+    navigation: {
+        nextEl: '.job__slider-next',
+        prevEl: '.job__slider-prev',
+    },
+
+    breakpoints: {
+        501: {
+            slidesPerView: 1.45,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        601: {
+            slidesPerView: 1.65,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        701: {
+            slidesPerView: 1.7,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        801: {
+            slidesPerView: 2.2,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+
+        901: {
+            slidesPerView: 2.75,
+            slidesPerGroup: 1,
+            spaceBetween: 15,
+        },
+        1231: {
+            slidesPerView: 3,
+            slidesPerGroup: 1,
+            spaceBetween: 20,
+        },
+    },
+
+    loop: false,
+});
+
 
 })()
