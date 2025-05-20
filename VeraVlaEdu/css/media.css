@@ -417,6 +417,12 @@
         transform: translateX(-50%);
     }
 
+    @media (hover: hover) {
+        .hero__main-btn:hover {
+        transform: translateY(-3px) translateX(-50%) ;
+        }
+    }
+
     /* --------------------------- */
 
     .accordion-list__control-title {

@@ -14,6 +14,7 @@ body {
     font-family: "Avenir Next Cyr";
     font-size: 16px;
     font-weight: 450;
+    user-select: none;
 }
 
 .wrapper {

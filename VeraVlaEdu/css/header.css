@@ -94,6 +94,7 @@
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.05);
     transition: var(--transition);
+    cursor: pointer;
 }
 
 @media (hover: hover) {
@@ -119,6 +120,7 @@
     right: 0;
     height: auto;
     bottom: 0;
+    cursor: pointer;
 }
 
 .hero__whatsapp-btn-wrap {
@@ -233,6 +235,8 @@
     height: 20px;
     width: 37px;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
 }
 
 .hero__scroll-circle {
