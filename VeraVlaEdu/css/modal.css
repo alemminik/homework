@@ -99,7 +99,7 @@
     color: var(--general-text);
     font-size: 15px;
     letter-spacing: 1.5px;
-    min-height: 62px;
+    height: 62px;
 }
 
 .field__input::placeholder {
