@@ -92,7 +92,8 @@
     border-radius: 9px;
     border: 2px solid #49B9E8;
     background: linear-gradient(180deg, rgba(0, 224, 255, 0.11) 0%, rgba(0, 224, 255, 0.05) 100%);
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     padding: 21px 57px 16px 21px;
     transition: var(--transition);
