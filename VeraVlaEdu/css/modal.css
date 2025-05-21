@@ -120,26 +120,14 @@
 }
 
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
-    opacity: 0;
     cursor: pointer;
     position: absolute;
-    right: 10px;
+    right: 30px;
 }
 
 .field__input-date {
     position: relative;
     line-height: 62px;
-}
-
-.field__input-date::after {
-    content: url('../img/logos/icons/arrow-down.svg');
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
 }
 
 .field__input:focus+span {

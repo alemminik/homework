@@ -1,5 +1,6 @@
 .header {
     background: url('../img/decor/header-bg.jpg') 50% 100% / cover no-repeat;
+    height: 100vh;
 }
 
 .header__top {

@@ -14,7 +14,6 @@ body {
     font-family: "Avenir Next Cyr";
     font-size: 16px;
     font-weight: 450;
-    user-select: none;
 }
 
 .wrapper {
@@ -38,6 +37,7 @@ body {
 }
 
 .button {
+    user-select: none;
     display: block;
     width: 479px;
     height: 60px;
