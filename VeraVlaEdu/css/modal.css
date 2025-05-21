@@ -125,6 +125,7 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
 
 .field__input-date {
     position: relative;
+    line-height: 62px;
 }
 
 .field__input-date::after {
